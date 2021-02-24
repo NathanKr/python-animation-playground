@@ -1,5 +1,4 @@
 import random
-from itertools import count
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
@@ -7,10 +6,9 @@ plt.style.use('fivethirtyeight') # nice styling
 
 x = []
 y = []
-index = count()
 
 def animate(frame_index): 
-    x.append(next(index))
+    x.append(next(frame_index))
     y.append(random.randint(0,5))
     plt.cla()
     plt.plot(x,y)
