@@ -9,7 +9,7 @@ x = []
 y = []
 index = count()
 
-def animate(i): # what is i ???
+def animate(frame_index): 
     x.append(next(index))
     y.append(random.randint(0,5))
     plt.cla()
@@ -17,6 +17,4 @@ def animate(i): # what is i ???
 
 
 ani = FuncAnimation(plt.gcf(),animate,interval=1000)
-
-plt.tight_layout() # add automatic padding
 plt.show()
