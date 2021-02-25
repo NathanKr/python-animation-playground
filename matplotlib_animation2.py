@@ -13,7 +13,7 @@ y = []
 
 
 def animate(frame_index): 
-    x = np.linspace(0, 2, 1000)
+    x = np.linspace(0, 2, 100)
     y = np.sin(2 * np.pi * (x - 0.01 * frame_index))
     line.set_data(x,y)
 
