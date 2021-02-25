@@ -5,8 +5,8 @@ from matplotlib.animation import FuncAnimation
 limit = 2
 fig = plt.figure()
 ax = plt.axes(xlim=(-limit, limit), ylim=(0, 2*limit))
-line1, = ax.plot([], [], lw=2)
-line2, = ax.plot([], [],'o',markersize=10)
+line1, = ax.plot([], [], lw=2) # type Line2D ??
+line2, = ax.plot([], [],'o',markersize=10) # type Line2D ??
 
 
 x = np.linspace(-limit, limit, 1000)
